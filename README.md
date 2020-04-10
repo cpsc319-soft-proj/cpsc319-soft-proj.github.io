@@ -131,6 +131,6 @@ Width is not mandatory but it's specially useful in the sponsors page.
 ### Deploy - to cs-319
 
 1. Save your changes.
-1. Build jekyll `bundle exec jekyll build`
-1. Copy everything under the folder `_site` to your target machine
+1. Build jekyll `bundle exec jekyll clean && bundle exec jekyll build`
+1. Copy everything under the folder `_site` to your target machine: `scp -r .\_site\* cs-319@remote.students.cs.ubc.ca:/home/c/cs-319/public_html`
 

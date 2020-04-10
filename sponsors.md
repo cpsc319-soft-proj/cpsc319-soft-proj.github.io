@@ -18,7 +18,7 @@ More details about the sponsors and projects available in the lecture notes
 {: .note}
 
 
-<img width="40%" src="{{site.baseurl}}/assets/figures/galvanize.jpg">
+<img width="40%" src="{{ '/assets/figures/galvanize.jpg' | absolute_url}}">
 
 
 
@@ -37,7 +37,7 @@ any individuals.
 ***
 
 
-<img width="40%" src="{{site.baseurl}}/assets/figures/ae.jpg">
+<img width="40%" src="{{ '/assets/figures/ae.jpg' | absolute_url }}">
 
 
 
@@ -58,7 +58,7 @@ Canada.
 ***
 
 
-<img width="40%" src="{{site.baseurl}}/assets/figures/bc-hospital.jpg">
+<img width="40%" src="{{ '/assets/figures/bc-hospital.jpg' | absolute_url }}">
 
 
 
@@ -78,7 +78,7 @@ which must be stored securely.
 ***
 
 
-<img width="40%" src="{{site.baseurl}}/assets/figures/icbc.jpg">
+<img width="40%" src="{{ '/assets/figures/icbc.jpg' | absolute_url }}">
 
 
 **Business Requirement Statement:**
@@ -96,7 +96,7 @@ ICBC office.
 ***
 
 
-<img  width="40%" src="{{site.baseurl}}/assets/figures/hsbc.png">
+<img  width="40%" src="{{ '/assets/figures/hsbc.png' | absolute_url }}">
 
 
 **Business Requirement Statement:**
