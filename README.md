@@ -22,13 +22,43 @@ The site uses the [Just the Docs](https://github.com/pmarsceill/just-the-docs) J
 
 Clone the repo:
 
-`git clone ...`
+`git clone https://github.com/cpsc319-soft-proj/cpsc319-soft-proj.github.io.git`
 
 Edit the repo using any markdown editor of your preference, I personally like VSCode with the `markdown preview enhanced` extension:
 
 ![alt text](assets/figures/vscode.png "WYSWYG")
 
 **Important**: during editing, figures are not displayed because their path has to comply with the Github pages syntax. 
+
+
+After cloning, install and run jekyll to see changes locally:
+
+```bash
+cd cpsc319-soft-proj.github.io.git
+gem install jekyll bundler
+bundle install
+bundle exec jekyll s
+```
+
+if everything was configured properly, you should see the following output:
+
+```bash
+Configuration file: C:/.../cpsc319-soft-proj.github.io/_config.yml
+            Source: C:/.../cpsc319-soft-proj.github.io
+       Destination: C:/.../cpsc319-soft-proj.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 2.094 seconds.
+  Please add the following to your Gemfile to avoid polling for changes:
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+ Auto-regeneration: enabled for 'C:/.../cpsc319-soft-proj.github.io'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+```
+
+Check the local version at: http://127.0.0.1:4000
+
+
 
 ### Editing
 
@@ -87,7 +117,7 @@ To correctly display a image, you have to use the following syntax:
 
 Width is not mandatory but it's specially useful in the sponsors page.
 
-### Deploy
+### Deploy - to Github
 
 1. Save your changes.
 1. Add them to git `git add --all .`
@@ -96,3 +126,11 @@ Width is not mandatory but it's specially useful in the sponsors page.
 1. Github web pages will automatically deploy the web page
 1. Wait a few seconds and refresh the web page to see the last changes live
 1. Congrats have a cup of tea or a beer
+
+
+### Deploy - to cs-319
+
+1. Save your changes.
+1. Build jekyll `bundle exec jekyll build`
+1. Copy everything under the folder `_site` to your target machine
+
