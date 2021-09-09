@@ -1,8 +1,8 @@
 var csvParse = function() {
 
     // put you document url here
-    var sharedDocUrl = 'https://docs.google.com/spreadsheets/d/11XZvlxEqV5qatfWSVwUYaQYkfgaHwlECzXoLYpd7Oqk/edit?usp=sharing'
-
+    var sharedDocUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTp0HJV9s9GPr_FgvMXFWCnlmlegMsH2m4AnN5ih505-k2OBplBm4XwrBRINgpMOD6SRLk3r6QEcHxY/pub?gid=0&single=true&output=csv'
+    
     // can also be only the ID
     // var sharedDocUrl = '1Rk9RMD6mcH-jPA321lFTKmZsHebIkeHx0tTU0TWQYE8'
 
@@ -73,9 +73,14 @@ var csvParse = function() {
         init: function() {
 
             if( $('#' + targetDiv).length ){
-                Tabletop.init( { key: sharedDocUrl  ,
-                         callback: showInfo,
-                         simpleSheet: true } );
+                Papa.parse(sharedDocUrl, {
+                    download: true,
+                    header: true,
+                    complete: function (results) {
+                        var data = results.data
+                        showInfo(data)
+                    }
+                });
             }else{
                 console.log('Not the good page to parse csv datas');
             }
@@ -86,3 +91,4 @@ var csvParse = function() {
 $( document ).ready(function() {
     csvParse.init();
 });
+

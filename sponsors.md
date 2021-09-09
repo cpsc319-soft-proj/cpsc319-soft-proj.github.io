@@ -18,24 +18,6 @@ More details about the sponsors and projects available in the lecture notes
 {: .note}
 
 
-<img width="40%" src="{{ '/assets/figures/galvanize.jpg' | absolute_url}}">
-
-
-
-**Business Requirement Statement:**
-
-Keeping the software community connected can be a challenge in Vancouver.
-Beyond the big tech giants, sharing new techniques and innovation is a key
-driver for the software development community. Galvanize would like to
-implement a solution to help with these tasks.
-
-**Project Profile:**
-
-Build a website aggregator platform that links to various contents submitted by
-any individuals.
-
-***
-
 
 <img width="40%" src="{{ '/assets/figures/ae.jpg' | absolute_url }}">
 
@@ -43,57 +25,21 @@ any individuals.
 
 **Business Requirement Statement:**
 
-With engineers and consultants in nearly every province and territory in
-Canada, AE’s resource tracking is very manual and de-centralized. They
-would like to streamline process and introduce a national resource and
-project tracking system to better manage projects and new client
-opportunities.
+Each year the 20+ locations of AE create and submit thousands of proposals to prospective
+clients across Canada. Each of these proposals includes the resumes of key resources who will
+participate in the project should it be won. These resumes are time-consuming to create as
+they are custom written for each proposal to highlight specific skills and experiences that are
+important to project success. The finalized resumes are stored in the proposal folder of a
+Network Drive and not easily located for use on future proposals.
+
 
 **Project Profile:**
 
-Create a new Project and resource tracking system that provides high level view of
-resources matched with domain knowledge for all consultants in different regions of
-Canada.
+What is needed is a solution where resumes can be created, stored, and exported for the initial
+proposal then recovered and modified when an employee is selected for a future proposal.
 
 ***
 
-
-<img width="40%" src="{{ '/assets/figures/bc-hospital.jpg' | absolute_url }}">
-
-
-
-**Business Requirement Statement:**
-
-As part of the research initiatives co-sponsored with UBC, there is research
-on children with behavioral disorders that present with hyper- (e.g.
-hyperactive restlessness) or hypo- (e.g. lethargy) forms of behavior.
-
-**Project Profile:**
-
-Develop a mobile friendly web-based data collection system for the
-WeSleepSmart Research Project. The primary scope of this project is to
-develop a system that allows collection of video, selfie photos, and a survey
-which must be stored securely.
-
-***
-
-
-<img width="40%" src="{{ '/assets/figures/icbc.jpg' | absolute_url }}">
-
-
-**Business Requirement Statement:**
-
-Insurance Corporation of BC (ICBC) is looking to improve its employee experience and operational
-efficiency through flexible work arrangements, such as working from home or
-alternate locations, which can have multiple benefits.
-
-**Project Profile:**
-
-Develop a system that allows for managing supply of available office
-locations with the demands of individuals looking to book work spaces in any
-ICBC office.
-
-***
 
 
 <img  width="40%" src="{{ '/assets/figures/hsbc.png' | absolute_url }}">
@@ -101,14 +47,21 @@ ICBC office.
 
 **Business Requirement Statement:**
 
-HSBC continues to collaborate regionally/globally to deliver projects. As
-such, most meetings are conducted virtually and are not face to face
-meetings.
+HSBC has the ability to check owned AWS accounts for compliance violations using tools like
+AWS Config and custom applications developed in-house. These tools also have the ability to
+auto remediate and notify developers of violations.
+
+We would like [to shift this work further left](https://en.wikipedia.org/wiki/Shift-left_testing) so developers can catch misconfigurations earlier and
+we avoid having misconfigurations deployed even for a small amount of time. HSBC is already
+using infrastructure as code to provision it’s AWS infrastructure, so it makes sense to have a
+solution that checks our Terraform files in Github as part of a deployment pipeline when
+changes to the Terraform script are applied.
 
 
 **Project Profile:**
 
-HSBC would like to develop a proof-of-concept solution to develop a natural
-language agent that can transcribe content of a meeting into text.
+We need to have an application that can check out Terraform files stored in a Git repo and run
+checks against them to ensure violations are not present.
+
 
 

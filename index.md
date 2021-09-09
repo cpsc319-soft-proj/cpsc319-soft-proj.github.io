@@ -49,15 +49,13 @@ for you.
 
 **TAs:**
 
-* Arthur de Sousa Marques
-* Amsem Chaleb
-* David Pagurek van Mossel
-* Francis Nguyen
-* Junfeng Xu
+* Arthur Marques
+* Marie Salomon
+
 
 **Resources:**
 
-* [Canvas](https://canvas.ubc.ca/courses/36010)
+* [Canvas](https://canvas.ubc.ca/courses/78041)
     - Assignments
     - Lecture Notes
 
